@@ -23,10 +23,17 @@ const body = document.querySelector('body');
 
 
 menuBtn.onclick = function(){
+
   menuMobileToggle ()
-  menuMobile.querySelectorAll('a').forEach(elem => {
+  
+  document.querySelectorAll('.menu__wraper__mobile a').forEach(elem => {
+
     elem.onclick = function(){
-      menuMobileToggle ()
+      
+      if(document.querySelector('.menu__wraper__mobile')){
+        menuMobileToggle ()
+      }
+      
     }
   })
 }
