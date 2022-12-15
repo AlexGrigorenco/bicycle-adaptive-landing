@@ -5,7 +5,7 @@ $(document).ready(function(){
       slidesToShow: 1,
       speed: 500,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 3000,
       waitForAnimate: false,
       
 
@@ -23,6 +23,15 @@ const body = document.querySelector('body');
 
 
 menuBtn.onclick = function(){
+  menuMobileToggle ()
+  menuMobile.querySelectorAll('a').forEach(elem => {
+    elem.onclick = function(){
+      menuMobileToggle ()
+    }
+  })
+}
+
+function menuMobileToggle (){
   icon.classList.toggle('menu-icon-active');
   menuMobile.classList.toggle('menu__wraper__mobile');
   dot.classList.toggle('dot__visible');

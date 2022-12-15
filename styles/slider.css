@@ -36,7 +36,6 @@
   align-items: center;
   justify-content: center;
   padding-top: calc(45px + (100 - 45) * ((100vw - 320px) / (1600 - 320)));
-  
 }
 .slick-dots li{
     margin: 0 10px;
@@ -46,7 +45,7 @@
     background-color: transparent;
     border: 1px solid #c8c8c8;
     border-radius: 50%;
-
+    cursor: pointer;
   
 } 
 .slick-dots li button{
